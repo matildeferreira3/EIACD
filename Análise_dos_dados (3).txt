@@ -1,0 +1,392 @@
+Aplicada a relevância com o modelo Decision Tree 'Ginny' 
+
+Dados a retirar
+'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Hallmark', 'CRI', 'Smoking', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'NASH', 'Hemochro', 'Cirrhosis', 'HIV', 'HBeAg', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS', 'Spleno'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Endemic', 'Obesity',
+
+Resultados
+DTree: 0,661...				KNN: 0,692...				RForest: 0,662...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Decision Tree 'Entropy'
+
+Dados a retirar
+'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Hallmark', 'CRI', 'Smoking', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'NASH', 'Hemochro', 'Cirrhosis', 'HIV', 'HBeAg', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Endemic', 'Spleno', 'Obesity'
+
+Resultados
+DTree: 0,666...				KNN: 0,692...				RForest: 0,661...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando apenas 'HBeAg'
+
+Dados a retirar
+'HBeAg'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Endemic', 'Spleno', 'Obesity', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Hallmark', 'CRI', 'Smoking', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'NASH', 'Hemochro', 'Cirrhosis', 'HIV', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,624...				KNN: 0,589...				RForest: 0,728...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,002
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Endemic', 'Spleno', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Hallmark', 'CRI', 'Smoking', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender',  'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,624...				KNN: 0,589...				RForest: 0,740...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,004
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Spleno', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,630...				KNN: 0,589...				RForest: 0,746...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,005
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,636...				KNN: 0,589...				RForest: 0,746...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,006
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'Nodules', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,636...				KNN: 0,589...				RForest: 0,728...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,009 (nenhum entre 0,006 e 0,008)
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'Metastasis', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,612...				KNN: 0,589...				RForest: 0,734...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,010
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'Grams_day', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,600...				KNN: 0,589...				RForest: 0,722...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,015
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'PVT', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,636...				KNN: 0,589...				RForest: 0,753...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,016
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT'
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'Ascites', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,618...				KNN: 0,589...				RForest: 0,722...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,018
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites',
+
+Dados que ficam
+'ALP', 'Platelets', 'Dir_Bil', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,606...				KNN: 0,589...				RForest: 0,734...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,020
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil'
+
+Dados que ficam
+'ALP', 'Platelets', 'ALT', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'Packs_year', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,582...				KNN: 0,589...				RForest: 0,740...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,025
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT'
+
+Dados que ficam
+'ALP', 'Platelets', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,581...				KNN: 0,582...				RForest: 0,763...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,029
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin'
+
+Dados que ficam
+'ALP', 'Platelets', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,655...				KNN: 0,595...				RForest: 0,753...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,030
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil'
+
+Dados que ficam
+'ALP', 'Platelets', 'TP', 'Iron', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,630...				KNN: 0,576...				RForest: 0,740...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,031
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS', 'Creatinine'
+
+Resultados
+DTree: 0,630...				KNN: 0,582...				RForest: 0,723...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,035
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'MCV', 'Sat', 'INR', 'GGT', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS', 'Creatinine'
+
+Resultados
+DTree: 0,600...				KNN: 0,582...				RForest: 0,721...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,036
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'MCV', 'Sat', 'INR', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS', 'Creatinine'
+
+Resultados
+DTree: 0,630...				KNN: 0,581...				RForest: 0,746...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,037
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'MCV', 'Hemoglobin', 'AFP', 'PS'
+Resultados
+DTree: 0,661...				KNN: 0,581...				RForest: 0,721...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,040
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat', 'MCV'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'Hemoglobin', 'AFP', 'PS'
+
+Resultados
+DTree: 0,721...				KNN: 0,581...				RForest: 0,696...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,044
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat', 'MCV', 'PS'
+
+Dados que ficam
+'ALP', 'Platelets', 'Iron', 'Hemoglobin', 'AFP'
+
+Resultados
+DTree: 0,757...				KNN: 0,581...				RForest: 0,733...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,047
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat', 'MCV', 'PS', 'Iron'
+
+Dados que ficam
+'ALP', 'Platelets', 'Hemoglobin', 'AFP'
+
+Resultados
+DTree: 0,709...				KNN: 0,587...				RForest: 0,725...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,052
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat', 'MCV', 'PS', 'Iron', 'Platelets'
+
+Dados que ficam
+'ALP', 'Hemoglobin', 'AFP'
+
+Resultados
+DTree: 0,678...				KNN: 0,721...				RForest: 0,732...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,090
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT', 'Ferritin', 'Leucocytes', 'Age', 'Total_Bil', 'Albumin', 'AST', 'TP', 'Creatinine', 'Major_Dim', 'GGT', 'INR', 'Sat', 'MCV', 'PS', 'Iron', 'Platelets', 'AFP'
+
+Dados que ficam
+'ALP', 'Hemoglobin'
+
+Resultados
+DTree: 0,642...				KNN: 0,666...				RForest: 0,642...
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+CONCLUSÕES
+
+Aplicada a relevância com o modelo Random Forest: retirando apenas 'HBeAg': 				KNN: 0,692...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,002		RForest: 0,740...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,004		RForest: 0,746...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,005		RForest: 0,746...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,006		RForest: 0,728...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,009		RForest: 0,734...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,010		RForest: 0,722...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,015		RForest: 0,753...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,016		RForest: 0,722...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,018		RForest: 0,734...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,020		RForest: 0,740...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,025		RForest: 0,763...  <---------------------------------------
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,029		RForest: 0,753...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,030		RForest: 0,740...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,031		RForest: 0,723...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,035		RForest: 0,721...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,036		RForest: 0,746...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,037		RForest: 0,721...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,040		DTree: 0,721...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,044		DTree: 0,757...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,047		RForest: 0,725...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,052		RForest: 0,732...
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,090		KNN: 0,666...
+________________________________________________________________________________________________________________________________________________________________________________
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+MELHOR RESULTADO:
+
+Aplicada a relevância com o modelo Random Forest: retirando tudo o que está abaixo de 0,025		RForest: 0,763...  <---------------------------------------
+
+Dados a retirar
+'HBeAg', 'Obesity', 'HIV', 'NASH', 'Hemochro', 'Cirrhosis', 'Hallmark', 'CRI', 'Smoking', 'Endemic', 'HCVAb', 'HBcAb', 'Encephalopathy', 'HBsAg', 'Gender', 'Spleno', 'AHT', 'Diabetes', 'Alcohol', 'Symptoms', 'Varices', 'PHT', 'Nodules', 'Metastasis', 'Grams_day', 'PVT', 'Ascites', 'Dir_Bil', 'Packs_year', 'ALT'
+
+Dados que ficam
+'ALP', 'Platelets', 'TP', 'Total_Bil', 'Iron', 'Leucocytes', 'Age', 'Ferritin', 'MCV', 'Sat', 'INR', 'GGT', 'Major_Dim', 'Creatinine', 'AST', 'Albumin', 'Hemoglobin', 'AFP', 'Platelets', 'PS'
+
+Resultados
+DTree: 0,581...				KNN: 0,582...				RForest: 0,763...
